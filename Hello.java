@@ -6,5 +6,7 @@ public class Hello {
 
 		System.out.println(el);
 
+		el.logChildren();
+
 	}
 }
