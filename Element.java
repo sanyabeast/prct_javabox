@@ -1,21 +1,6 @@
 import java.util.ArrayList;
 import java.util.Random;
 
-class Child {
-	int index;
-	Random rand;
-
-	public Child(int index){
-		this.index = index;
-		rand = new Random();
-
-	}
-
-	public String toString(){
-		return rand.toString();
-	}
-}
-
 public class Element {
 	String name = "Thing";
 	ArrayList<Child> children = new ArrayList<Child>();
@@ -40,4 +25,22 @@ public class Element {
 		}
 	}
 
+}
+
+class Child {
+	int index;
+	Random rand;
+
+	static int total = 0;
+
+	public Child(int index){
+		this.index = index;
+		rand = new Random();
+		total++;
+
+	}
+
+	public String toString(){
+		return Integer.toString(total);
+	}
 }
