@@ -20,7 +20,7 @@ public class SwingPaintDemo {
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         f.setSize(800, 600);
         f.add(new Panel());
-        f.pack();
+        //f.pack();
         f.setVisible(true);
     }
 }
