@@ -9,7 +9,7 @@ import java.awt.Graphics;
 public class Panel extends JPanel {
 
     public Panel() {
-        setBorder(BorderFactory.createLineBorder(Color.black));
+        setBorder(BorderFactory.createLineBorder(Color.red));
     }
 
     public Dimension getPreferredSize() {
@@ -18,7 +18,7 @@ public class Panel extends JPanel {
 
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
-
+        System.out.println(Color.red);
         // Draw Text
         g.drawString("I love Java!", 10, 30);
     }
